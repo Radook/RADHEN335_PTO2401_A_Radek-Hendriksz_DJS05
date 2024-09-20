@@ -1,0 +1,60 @@
+/* Center the body content */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    font-family: Arial, sans-serif;
+}
+
+/* Style the counter text */
+h1 {
+    margin: 0; /* Remove default margin */
+    margin-bottom: 2rem;
+}
+
+/* Style the count */
+#count {
+    font-size: 2em;
+    margin: 10px 0; /* Add margin for spacing */
+    transition: transform 0.2s; /* Smooth transition for the count */
+    margin-bottom: 3rem;
+}
+
+/* Style the buttons container */
+.button-container {
+    display: flex; /* Use flexbox to align buttons in a row */
+    justify-content: center; /* Center the buttons horizontally */
+}
+
+/* Style the buttons */
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+    border-radius: 20px;
+    border: none;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #3a3a3d; /* Change to a blue color on hover */
+    color: white;
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Animation effect when count changes */
+.count-increment {
+    animation: incrementAnimation 0.2s ease-in-out; /* Apply animation */
+}
+
+@keyframes incrementAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+
